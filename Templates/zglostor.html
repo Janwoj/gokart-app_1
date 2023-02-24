@@ -1,0 +1,444 @@
+
+    <nav>
+        <ul>
+            <li><a href="/">Główna 🏠</a></li>
+			<li><a href="/zarejestruj-przejazd">Zarejestruj przejazd 🏎️</a></li> 
+			<li><a href="/szukaj-kierowcy">Szukaj kierowcy 🌐</a></li>
+			<li><a href="/nowy-tor"><b>Zgłoś nowy tor! ✅</b></a></li>
+            <li><a href="/rejestracja">Zarejstruj się! 📝</a></li>
+        </ul>
+    </nav>
+
+<p><b></b></p>
+	<h2>Wypełniając poniższy formularz, można zgłosić nowy tor, który nie istnieje na liście torów.</h2>
+      
+
+	</div>
+</div>
+<div class="login-box">
+<div>
+    <form action = "/zapisz-tor" method=POST enctype = "multipart/form-data">
+      <label for="fname">Nazwa toru</label>
+      <input type="text" id="nazwat" name="nazwat" placeholder="Podaj nazwę toru..">
+  
+      <label for="lname">Adres toru</label>
+      <input type="text" id="adrest" name="adrest" placeholder="Podaj adres toru..">
+  
+      <label for="wojt">Województwo</label>
+      <select id="wojt" name="wojt">
+        <option value="pomorskie">Pomorskie</option>
+        <option value="zachodniopomorskie">Zachodniopomorskie</option>
+        <option value="warminskomazurskie">Warmińsko-mazurskie</option>
+        <option value="podlaskie">Podlaskie</option>
+        <option value="lubuskie">Lubuskie</option>
+        <option value="wielkopolskie">Wielkopolskie</option>
+        <option value="kujawskopomorskie">Kujawsko-pomorskie</option>
+        <option value="lodzkie">Łódzkie</option>
+        <option value="mazowieckie">Mazowieckie</option>
+        <option value="lubelskie">Lubelskie</option>
+        <option value="dolnoslaskie">Dolnośląskie</option>
+        <option value="opolskie">Opolskie</option>
+        <option value="slaskie">Śląskie</option>
+        <option value="malopolskie">Małopolskie</option>
+        <option value="swietokrzyskie">Świętokrzyskie</option>
+        <option value="podkarpackie">Podkarpackie</option>
+      </select>
+    
+      <input type="submit" value="Prześlij!">
+    </div></form>
+  </div>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+body {
+	font-size:22px;
+	line-height: 32px;
+	background-image: url('https://i.ibb.co/BKJmd0Z/hd-wallpaper-2695569-1920.jpg');
+	word-wrap:break-word !important;
+	font-family: 'Nunito';
+	}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+h2 {
+	text-align: center;
+	color: rgb(255, 255, 255);
+}	
+
+h3 {
+	font-size: 30px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+
+h3 a {
+	color: rgb(255, 255, 255);
+}
+
+a {
+	color: rgb(255, 255, 255);
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+h1 {
+	margin-top: 100px;
+	text-align:center;
+	font-size:60px;
+	font-family: 'Nunito';
+	}
+
+
+p {
+	text-align: center;
+	color: #ffffff;
+}
+
+nav {
+	margin: 50px 0;
+	background-color: #148bec;
+}
+
+nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color: #148bec;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+.terminarz-button{
+  font-family: 'Nunito';
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  -webkit-appearance: none;
+  appearance: none;
+  color:#fff;
+  background-image: url("https://cdn.pixabay.com/photo/2017/03/25/17/55/colorful-2174045_960_720.png");
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  margin-left: 30;
+}
+.tabela-button{
+  font-family: 'Nunito';
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("https://cdn.pixabay.com/photo/2017/09/07/10/09/triangle-2724449_960_720.png");
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  margin-left: 30;
+}
+.wyniki-button{
+  font-family: 'Nunito';
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_960_720.png");
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  margin-left: 30;
+}
+
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+/* galeria */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: 'Nunito';
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #000000;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	flex: 1 0 24rem;
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+.login-box {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 1000px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+label{margin-left: 20px;}
+#datepicker{width:180px; margin: 0 20px 20px 20px;}
+#datepicker > span:hover{cursor: pointer;}
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+</style>
